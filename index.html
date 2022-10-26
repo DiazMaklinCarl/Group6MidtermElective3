@@ -83,6 +83,7 @@ body {
   width: 60%;
   padding: 10px;
   border-radius: 4px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .img-slider .navigation {
@@ -92,6 +93,8 @@ body {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+
 }
 
 .img-slider .navigation .btn {
@@ -101,11 +104,49 @@ body {
   margin: 10px;
   border-radius: 50%;
   cursor: pointer;
+  
 }
 
 .img-slider .navigation .btn.active {
   background: #2696E9;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+    .home-img-2
+{
+	flex: 0 0 40%;
+	max-width: 40%;
+	text-align: center;
+	position: relative;
+ }
+.home-img-2::after
+{
+	content: '';
+	position: absolute;
+	height: 5vh;
+	width: 10vh;
+	border-bottom: 10px solid var(--skin-color);
+	border-right: 10px solid var(--skin-color);
+	right: 1%;
+	bottom: 10px;
+}
+.home-img-2::before
+{
+	content: '';
+	position: absolute;
+	height: 5vh;
+	width: 45px;
+	border-top: 10px solid var(--skin-color);
+	border-left: 10px solid var(--skin-color);
+	right: 240%;
+	top: -30px;
+}
+ .home-img-2 img
+{	
+	margin: auto;
+	border-radius: 5px;
+	height: 250px;
+ 	background-image: url(images/space.jpg);
 }
   </style>
 
@@ -145,7 +186,7 @@ body {
                   Ambulatory Patient Using IoT</span></h3>
               <p>Our thesis project is developing a tool that can recognize various coughs, including those caused by asthma, pneumonia, the common cold, and other respiratory diseases. Additionally, this device features a vital sign monitoring system that we can use to further diagnose the condition of the patient. We will use previous datasets and studies conducted by other researchers to build our system and device.</p>
             </div>
-            <div class="home-img padd-15">
+            <div class="home-img-2 padd-15">
 							<img src="images/coguh-removebg-preview.png" alt="">
               <br>
                <br>
@@ -156,64 +197,36 @@ body {
       </section>
       <!-- =========Home Section End ======== ---->
       <div class="img-slider">
-    <div class="slide active">
-      <img src="1.jpg" alt="">
-      <div class="info">
-        <h2>Slide 01</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Voluptas cumque inventore voluptatum repellendus! A obcaecati 
-          rerum voluptatibus dolorem expedita optio officia laudantium autem 
-          minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
-      </div>
-    </div>
-      <div class="slide">
-        <img src="2.jpg" alt="">
-        <div class="info">
-          <h2>Slide 02</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptas cumque inventore voluptatum repellendus! A obcaecati 
-            rerum voluptatibus dolorem expedita optio officia laudantium autem 
-            minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
-        </div>
-      </div>
-        <div class="slide">
-          <img src="3.jpg" alt="">
-          <div class="info">
-            <h2>Slide 03</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Voluptas cumque inventore voluptatum repellendus! A obcaecati 
-              rerum voluptatibus dolorem expedita optio officia laudantium autem 
-              minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
-          </div>
-        </div>
-          <div class="slide">
-            <img src="4.jpg" alt="">
-            <div class="info">
-              <h2>Slide 04</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Voluptas cumque inventore voluptatum repellendus! A obcaecati 
-                rerum voluptatibus dolorem expedita optio officia laudantium autem 
-                minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
-            </div>
-          </div>
-            <div class="slide">
-              <img src="5.jpg" alt="">
-              <div class="info">
-                <h2>Slide 05</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Voluptas cumque inventore voluptatum repellendus! A obcaecati 
-                  rerum voluptatibus dolorem expedita optio officia laudantium autem 
-                  minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
-              </div>
-            </div>
-
-            <div class="navigation">
+         <div class="navigation">
               <div class="btn active"></div>
               <div class="btn"></div>
               <div class="btn"></div>
-              <div class="btn"></div>
-              <div class="btn"></div>
+
             </div>
+    <div class="slide active">
+      <img src="images/lungs.png" alt="">
+      <div class="info">
+        <h2>Goal</h2>
+        <p>Our goal is to create a device that will allow us to monitor patients and diagnose them of possible resiparoty illnesses through the analysis of their vital signs and cough patterns that is gathered using our device</p>
+      </div>
+    </div>
+      <div class="slide">
+        <img src="images/ble-sense.jpg" alt="">
+        <div class="info">
+          <h2 style="color:black;">The Hardware</h2>
+          <p>We will use Arduino BLE 33 BLE Sense as our main Arduino board. The reason for this is that this is a device that is extremely well suited to be used in wearable smart devices due to the the reasons and features listed below:</p>
+        </div>
+      </div>
+        <div class="slide">
+          <img src="images/software.png" alt="">
+          <div class="info">
+            <h2>The Software</h2>
+            <p>We will use different kinds of tools in order to create our software system. Examples of these tools are Arduino IDE, Impulse Edge and other tools and databases for the backend </p>
+          </div>
+        </div>
+          
+
+           
       </div>
 
 

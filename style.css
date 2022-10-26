@@ -633,9 +633,8 @@ h3.my-profession
 	height: 50px;
 	padding: 0 50px;
 }
-.contact .map
-{
-   display: block;
+.contact .map {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
