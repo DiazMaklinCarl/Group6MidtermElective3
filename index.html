@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group 6</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="color-1.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- ====== Style Switcher ===== -->
+  <link rel="stylesheet" type="text/css" href="color-1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" type="text/css" href="color-2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" type="text/css" href="color-3.css" class="alternate-style" title="color-3" disabled>
+  <link rel="stylesheet" type="text/css" href="color-4.css" class="alternate-style" title="color-4" disabled>
+  <link rel="stylesheet" type="text/css" href="color-5.css" class="alternate-style" title="color-5" disabled>
+
+  <link rel="stylesheet" type="text/css" href="style-switcher.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800;900&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1D212B;
+}
+
+.img-slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 10px;
+  background: #1D212B;
+}
+
+.img-slider .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.img-slider img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.img-slider .slide .info {
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+
+.img-slider .slide .info h2 {
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.img-slider .slide .info p {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.img-slider .navigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img-slider .navigation .btn.active {
+  background: #2696E9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+  </style>
+
+</head>
+
+<body>
+  <!-- =========Main Container Start ======== ---->
+  <div class="main-container">
+    <!-- =========Aside Start ======== ---->
+    <div class="aside">
+      <div class="logo">
+        <a href="#">Group <span>6</span></a>
+      </div>
+      <div class="nav-toggler">
+        <span>
+
+        </span>
+      </div>
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+      </ul>
+    </div>
+    <!-- =========Aside End ======== ---->
+
+    <!-- =========Main Content Start ======== ---->
+    <div class="main-content ">
+
+      <!-- =========Home Section Start ======== ---->
+      <section class="home section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Hello, we are<span class="name"> Group 6</span></h3>
+              <h3 class="my-profession">Our thesis title is <span class="typing">Respiratory Diagnostic System for
+                  Ambulatory Patient Using IoT</span></h3>
+              <p>Our thesis project is developing a tool that can recognize various coughs, including those caused by asthma, pneumonia, the common cold, and other respiratory diseases. Additionally, this device features a vital sign monitoring system that we can use to further diagnose the condition of the patient. We will use previous datasets and studies conducted by other researchers to build our system and device.</p>
+            </div>
+            <div class="home-img padd-15">
+							<img src="images/coguh-removebg-preview.png" alt="">
+              <br>
+               <br>
+              <h2>Cough and Vital Sign Sensor and Diagnostic Device</h2>
+						</div>
+          </div>
+        </div>
+      </section>
+      <!-- =========Home Section End ======== ---->
+      <div class="img-slider">
+    <div class="slide active">
+      <img src="1.jpg" alt="">
+      <div class="info">
+        <h2>Slide 01</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptas cumque inventore voluptatum repellendus! A obcaecati 
+          rerum voluptatibus dolorem expedita optio officia laudantium autem 
+          minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
+      </div>
+    </div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+        <div class="info">
+          <h2>Slide 02</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptas cumque inventore voluptatum repellendus! A obcaecati 
+            rerum voluptatibus dolorem expedita optio officia laudantium autem 
+            minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
+        </div>
+      </div>
+        <div class="slide">
+          <img src="3.jpg" alt="">
+          <div class="info">
+            <h2>Slide 03</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Voluptas cumque inventore voluptatum repellendus! A obcaecati 
+              rerum voluptatibus dolorem expedita optio officia laudantium autem 
+              minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
+          </div>
+        </div>
+          <div class="slide">
+            <img src="4.jpg" alt="">
+            <div class="info">
+              <h2>Slide 04</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptas cumque inventore voluptatum repellendus! A obcaecati 
+                rerum voluptatibus dolorem expedita optio officia laudantium autem 
+                minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
+            </div>
+          </div>
+            <div class="slide">
+              <img src="5.jpg" alt="">
+              <div class="info">
+                <h2>Slide 05</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Voluptas cumque inventore voluptatum repellendus! A obcaecati 
+                  rerum voluptatibus dolorem expedita optio officia laudantium autem 
+                  minus ipsum nesciunt, dolor at, blanditiis quaerat!</p>
+              </div>
+            </div>
+
+            <div class="navigation">
+              <div class="btn active"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+            </div>
+      </div>
+
+
+    </div>
+    <!-- =========Main Content End ======== ---->
+
+
+    <div>
+
+      <!-- =========Main Container End ======== ---->
+      <!-- ===== Style Switcher Start ===== -->
+      <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+          <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+          <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+          <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+          <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+          <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+      </div>
+
+       <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slides)=>{
+            slides.classList.remove('active');
+
+            btns.forEach((btn)=>{
+              btn.classList.remove('active');
+            })
+
+          })
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+        btns.forEach((btn,i)=>{
+          btn.addEventListener("click",()=>{
+            manualNav(i);
+            currentSlide = i;
+          })
+        })
+
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide)=>{
+                activeSlide.classList.remove('active');
+              });
+
+              slides[i].classList.add('active');
+              btns[i].classList.add('active');
+              i++;
+
+              if(slides.length == i){
+                i = 0;
+              }
+              if(i >= slides.length){
+                return;
+              }
+              repeater();
+
+            },10000);
+          }
+          repeater(); 
+        }
+        repeat();
+      </script>
+
+
+      <!-- ===== Style Switcher End ===== -->
+      <!-- ========= JS Files ======== ---->
+      <script src="script.js"></script>
+      <script src="style-switcher.js"></script>
+</body>
+
+</html>
